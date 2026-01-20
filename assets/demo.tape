@@ -1,3 +1,5 @@
+Require fish
+Require om
 Require eza
 
 # Outputs
@@ -15,7 +17,7 @@ Set BorderRadius 10
 Set CursorBlink false
 
 # Stage 1: Module Generation
-Type "nix run nixpkgs#omnix -- init github:juspay/nixos-unified-template -o ./nixconfig && cd ./nixconfig"
+Type "om init github:juspay/nixos-unified-template -o ./nixconfig && cd ./nixconfig"
 Sleep 1s
 Enter
 Hide
